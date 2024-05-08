@@ -20,6 +20,9 @@ cd pwd-gen
 
 # Make the script executable
 chmod +x pwd-gen.sh
+
+# To install the script globally, move it to a directory in your PATH
+ln -s "$(pwd)/pwd-gen.sh" /usr/local/bin/pwd-gen
 ```
 
 ### Usage
@@ -27,7 +30,7 @@ chmod +x pwd-gen.sh
 Basic command structure:
 
 ```bash
-./pwd-gen.sh [method] [options]
+pwd-gen.sh [method] [options]
 ```
 
 #### Methods
@@ -49,19 +52,19 @@ Basic command structure:
 Generate a SHA-256 hashed password:
 
 ```bash
-./pwd-gen.sh sha
+pwd-gen.sh sha
 ```
 
 Generate a password in interactive mode and save to a file:
 
 ```bash
-./pwd-gen.sh --interactive --output-file /path/to/password.txt
+pwd-gen.sh --interactive --output-file /path/to/password.txt
 ```
 
 Generate a Base64 encoded password and suppress all outputs:
 
 ```bash
-./pwd-gen.sh base64 --quiet
+pwd-gen.sh base64 --quiet
 ```
 
 ### Tested Environment
