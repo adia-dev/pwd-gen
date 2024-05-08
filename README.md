@@ -9,6 +9,9 @@ The `pwd-gen` script is a versatile command-line tool designed to generate secur
 - **Output Control**: Direct password output to a console or save directly to a file.
 - **Verbose and Quiet Modes**: Get detailed execution logs or suppress all output, suitable for scripting and automation.
 
+<img width="842" alt="Screenshot 2024-05-09 at 00 49 40" src="https://github.com/adia-dev/pwd-gen/assets/63371699/ca065d2b-e0de-456e-b995-70cacbfffc98">
+
+
 ### Installation
 
 ```bash
