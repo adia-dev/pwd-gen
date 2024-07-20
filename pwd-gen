@@ -127,7 +127,7 @@ generate_password() {
             [ $VERBOSE -eq 1 ] && echo "Password saved to $OUTPUT_FILE"
         else
             PASSWORD=$(eval "$COMMAND")
-            echo "$PASSWORD"
+            echo -n "$PASSWORD"
         fi
     fi
 }
